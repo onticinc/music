@@ -46,7 +46,7 @@ const Sidebar: React.FC<SidebarProps> = (
                 w-[300px]
                 p-2
             ">
-                <Box className="text-green-500">
+                <Box className="">
                     <div className="
                         flex 
                         flex-col 
