@@ -6,6 +6,8 @@ import { RxCaretLeft, RxCaretRight } from "react-icons/rx";
 import { HiHome } from "react-icons/hi";
 import { BiSearch } from "react-icons/bi";
 import Button from "./Button";
+import { type } from "os";
+
 
 interface HeaderProps {
     children: React.ReactNode;
@@ -44,9 +46,7 @@ const Header: React.FC<HeaderProps> = ({
                 </div>
                 <div className="flex justify-between gap-x-4 items-center">
                     <>
-                        <Button>
-                            Sign Up
-                        </Button>
+                        <Button>Sign Up!</Button>
                     </>
                 </div>
             </div>
