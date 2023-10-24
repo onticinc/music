@@ -1,6 +1,7 @@
 "use client"
 
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 interface ListItemsProps {
     image: string;
@@ -17,12 +18,16 @@ const ListItem: React.FC<ListItemsProps> = ({
     const router = useRouter();
 
     const onClick = () => {
-    
+        // Add authentication before push
+        router.push(href);
     }
     return(
-        <div className="text-white">
-            List Item!
-        </div>
+        <button className="relative group flex item-center founded-md overflow-hidden gap-x-4 bg-neutral-100/10 hover:bg-neutral-100/20 pr-4">
+            <div className="relative min-h-[64px] min-w-[64px]">
+                <Image className="object-cover" fill src={image} alt="Image"/>
+            </div>
+            <p>{name}</p>
+        </button>
     )
 }
 
