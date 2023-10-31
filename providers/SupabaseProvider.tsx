@@ -21,3 +21,5 @@ const SupabaseProvider: React.FC<SupabaseProviderProps> = ({ children }) => {
     )
 
 }
+
+export default SupabaseProvider;
