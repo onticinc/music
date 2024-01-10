@@ -63,7 +63,7 @@ const Sidebar: React.FC<SidebarProps> = (
                         
                     </div>
                 </Box>
-                <Box className="text-green-500 overflow-auto h-full">
+                <Box className="text-indigo-500 overflow-auto h-full">
                     <Library />
                 </Box>
             </div>

@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 import Modal from "./Modal";
 import { ThemeSupa } from "@supabase/auth-ui-shared";
 
-import { Auth } from '@supabase/auth-ui-react'
+// import { Auth } from '@supabase/auth-ui-react'
 
 const AuthModal = () => {
 
@@ -15,19 +15,19 @@ const AuthModal = () => {
     const { session } = useSessionContext();
 
     return (
-        <Modal
-            title="Welcome!"
-            description="Login to your account"
-            isOpen
-            onChange={() => {}}
-        >
-            <Auth 
-                supabaseClient={supabaseClient}
-                appearance={{
-                    theme:ThemeSupa
-                }}
-            />
-        </Modal>
+        // <Modal
+        //     title="Welcome!"
+        //     description="Login to your account"
+        //     isOpen
+        //     onChange={() => {}}
+        // >
+        //     <Auth 
+        //         supabaseClient={supabaseClient}
+        //         appearance={{
+        //             theme:ThemeSupa
+        //         }}
+        //     />
+        // </Modal>
     );
 }
 
